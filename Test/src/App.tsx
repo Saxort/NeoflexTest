@@ -1,9 +1,12 @@
+import Sale from "./pages/sale"
 
 
 function App() {
 
   return (
-    <div>Привет</div>
+    <>
+    <Sale></Sale>
+    </>
   )
 }
 
