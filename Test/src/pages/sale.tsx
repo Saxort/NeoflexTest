@@ -1,8 +1,10 @@
+import classes from './sales.module.css'
 
 
-function Sale () {
+function Sale() {
+   
   return (
-    <div>sale</div>
+    <div className={classes.Sales}>ds</div>
   )
 }
 
