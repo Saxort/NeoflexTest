@@ -1,0 +1,85 @@
+.Card {
+    display: flex;
+    width: 350px;
+    height: 407px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    flex-direction: column;
+
+    img {
+        pointer-events: none;
+        width: 219px;
+    }
+}
+
+
+
+.Card__info {
+    margin-top: 54px;
+    display: flex;
+    width: 307px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.title__price {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+
+    .price {
+        color: #FFA542;
+    }
+}
+
+.rate__buttons {
+    display: flex;
+    width: 100%;
+    padding-top: 26px;
+    justify-content: space-between;
+
+    button {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+.rate {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #838383;
+    :last-child{
+        padding-left: 10px;
+    }
+}
+
+
+
+.rate {
+    img {
+        width: 24px;
+        height: 22px;
+    }
+}
