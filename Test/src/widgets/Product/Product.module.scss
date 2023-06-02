@@ -12,14 +12,16 @@
     font-size: 20px;
     line-height: 24px;
     color: #838383;
+   
 }
-
+.Caption__Container{
+    padding-top: 28px;
+}
 .Cards{
-    
     margin-top: 2.074688796680498vh;
-    justify-content: start;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
     gap:30px;
 }

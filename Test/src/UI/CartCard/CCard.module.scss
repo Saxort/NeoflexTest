@@ -1,0 +1,94 @@
+.Card {
+    display: flex;
+    width: clamp(633px, 33.8vw, 33.8vw);
+    height: clamp(218px, 22.6vh, 22.6vh);
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+
+    .main___Img {
+        width: clamp(146px, 7.7vw, 7.7vw);
+        pointer-events: none;
+        height: clamp(136px, 14.1vh, 14.1vh);
+    }
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.deletButtion {
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../public/picture/forButton/bucket2.svg');
+    background-repeat: no repeat;
+}
+
+.del__price {
+    display: flex;
+    padding-right: 18px;
+    height: 70%;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 600;
+    justify-content: space-between;
+    flex-direction: column;
+   button{
+    margin: 0 auto;
+   }
+}
+
+.img__counteButtons {
+    padding: 18px;
+    flex-direction: column;
+}
+
+.counterButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 600;
+
+    button {
+        display: flex;
+        text-align: center;
+        color: white;
+        align-items: center;
+        font-size: 35px;
+        width: 35.17px;
+
+        >p {
+
+            margin: 0 auto;
+        }
+
+        height: 30px;
+        background: #FFCE7F;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+
+
+
+.title__price {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(17px, 0.9vw, 0.9vw);
+    line-height: 21px;
+
+    .price {
+        color: #AAAAAA;
+        
+    }
+}

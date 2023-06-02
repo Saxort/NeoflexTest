@@ -1,18 +1,18 @@
 .Card {
     display: flex;
-    width: 350px;
-    height: 407px;
+    width: clamp(350px,18.6vw,18.6vw);
+    height:  clamp(407px,42.2vh,42.2vh);
     background-color: white;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
     flex-direction: column;
-
-    img {
+    
+    .main___Img {
+        width: clamp(219px,11.6vw,11.6vw);
         pointer-events: none;
-        width: 219px;
+        height: clamp(248px,25.7vh,25.7vh);
     }
 }
 
@@ -21,7 +21,10 @@
 .Card__info {
     margin-top: 54px;
     display: flex;
-    width: 307px;
+    width:clamp(280px,16.3vw,16.3vw);
+    @media (max-width:510px) {
+        width:250px ;
+    }
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -35,7 +38,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 17px;
+    font-size: clamp(17px, 0.9vw, 0.9vw);
     line-height: 21px;
 
     .price {
@@ -53,7 +56,7 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 15px;
+        font-size: clamp(15px,0.8vw,0.8vw);
         line-height: 21px;
         border: none;
         background: none;
@@ -66,11 +69,15 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 17px;
+    font-size: clamp(17px, 0.9vw, 0.9vw);
     line-height: 21px;
     /* identical to box height */
     color: #838383;
-    :last-child{
+    :first-child{
+        width: clamp(23px, 23px, 3.2vw);
+        height: clamp(23px,2.3vh,2.3vh);
+    }
+    P{
         padding-left: 10px;
     }
 }
