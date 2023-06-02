@@ -21,7 +21,6 @@ const CartProduct = () => {
   const filterProducts = allProducts.filter((el) =>
     selectedData.includes(el.id)
   );
-  console.log(countProducts, "asdasdasdasdasdasd");
   return (
     <div className={classes.Container}>
       <div className={classes.Caption}>Корзина</div>
